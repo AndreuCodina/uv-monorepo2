@@ -4,13 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "domain",
-]
+dependencies = ["domain"]
+
+[tool.uv.sources]
+api = { workspace = true }
+domain = { workspace = true }
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.uv.sources]
-domain = { workspace = true }
