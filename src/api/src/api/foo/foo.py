@@ -1,2 +1,3 @@
 class Foo:
-    print("[Foo] Printed")
+    def print(self) -> None:
+        print("[Foo] Printed")
