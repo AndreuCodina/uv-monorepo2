@@ -6,5 +6,18 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 
+[tool.uv]
+dev-dependencies = [
+    "api",
+    "domain",
+    "pyright==1.1.384",
+    "ruff==0.6.9",
+    "jupyter==1.1.1",
+]
+
+[tool.uv.sources]
+api = { workspace = true }
+domain = { workspace = true }
+
 [tool.uv.workspace]
 members = ["src/api", "src/domain"]
